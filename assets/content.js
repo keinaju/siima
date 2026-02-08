@@ -1,5 +1,6 @@
 // Initialize click events:
 document.getElementById("home").onclick = setHome;
+document.getElementById("premises").onclick = setPremises;
 document.getElementById("rules").onclick = setRules;
 document.getElementById("membership").onclick = setMembership;
 document.getElementById("contacts").onclick = setContacts;
@@ -25,6 +26,12 @@ function createSubheading(text) {
   return subheading;
 }
 
+function createImage(filename) {
+  const image = document.createElement("img");
+  image.src = "images/" + filename;
+  return image;
+}
+
 function setHome() {
   getContentNode().replaceChildren(
     createParagraph(
@@ -39,6 +46,24 @@ function setHome() {
     createParagraph(
       "Aktiivista biljarditoimintaa on harjoitettu vuodesta 2005 ja rekisteröitynä yhdistyksenä vuodesta 2007 saakka. Alkuperäinen nimi Pyhäjärven Siimaseura ry. vaihdettiin nykyiseen muotoonsa muuton myötä vuonna 2017. Yhdistyksemme on myös Suomen Biljardiliitto ry:n jäsen."
     )
+  );
+}
+
+function setPremises() {
+  getContentNode().replaceChildren(
+    createParagraph(
+      "Biljardipaikkana Siimaseura on läpikäynyt monia eri vaiheita - aina laajennuksesta muuttoon asti. Hieman vajaat kaksitoista vuotta kotisali sijaitsi Tampereen Pyynikillä, kunnes edessä oli muutto nykyisiin tiloihin. Uusi kotisali Tampereen Lamminpäässä otettiin käyttöön 01.03.2017."
+    ),
+    createParagraph(
+      "Lamminpään pelitilalla on kokoa 140,0 m². Pooliin eli tavalliseen biljardiin on neljä pöytää: 2 kpl Diamond ja 2kpl Dynamic III. Snooker-pöytänä on Shender. "
+    ),
+    createParagraph(
+      "Salin laadukkuuteen ja viihtyisyyteen on panostettu muutenkin. Tietokone, kaksi televisiota sekä soittopelit löytyvät, kuten myös keittiötilat ja WC. Ilmaista pysäköintitilaa on tarjolla niin pelipaikan edessä kuin Jussinkadun varressakin."
+    ),
+    createParagraph(
+      "Pyhäjärven Siimaseura ry. muutti Pyynikin Trikoolla alkaneen saneerauksen vuoksi Lamminpäähän 01.03.2017, jonne pelitila pystytettiin talkoovoimin. Elokuussa pelipaikan ja yhdistyksen nimeksi tuli Biljardiklubi Siimaseura."
+    ),
+    createImage("premises.jpeg")
   );
 }
 
