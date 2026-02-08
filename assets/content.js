@@ -1,6 +1,7 @@
 // Initialize click events:
 document.getElementById("home").onclick = setHome;
 document.getElementById("contacts").onclick = setContacts;
+document.getElementById("policy").onclick = setPolicy;
 
 // Display initial content:
 setHome();
@@ -14,6 +15,12 @@ function createParagraph(text) {
   const paragraph = document.createElement("p");
   paragraph.appendChild(document.createTextNode(text));
   return paragraph;
+}
+
+function createSubheading(text) {
+  const subheading = document.createElement("h2");
+  subheading.appendChild(document.createTextNode(text));
+  return subheading;
 }
 
 function setHome() {
@@ -35,6 +42,59 @@ function setHome() {
 
 function setContacts() {
   getContentNode().replaceChildren(
-    createParagraph("Timo Sacklen, puheenjohtaja")
+    createParagraph(
+      "Timo Sacklén, puheenjohtaja, 044 342 7007, timos@siimaseura.fi"
+    ),
+    createParagraph(
+      "Vesa Saarinen, varapuheenjohtaja, 050 558 8484, vesa@siimaseura.fi"
+    ),
+    createParagraph(
+      "Janne Forsman, hallituksen jäsen, 041 442 2779, janne@siimaseura.fi"
+    ),
+    createParagraph("Joni Seppälä, sihteeri, 040 547 1415, joni@siimaseura.fi"),
+    createParagraph(
+      "Sami Saariaho, rahastonhoitaja, 050 326 3013, sami@siimaseura.fi"
+    ),
+    createParagraph(
+      "Kai Talvio, hallituksen jäsen, 045 885 4449, kai@siimaseura.fi"
+    )
+  );
+}
+
+function setPolicy() {
+  getContentNode().replaceChildren(
+    createSubheading(
+      "Biljardiklubi Siimaseura ry:n rekisteri- ja tietosuojaseloste"
+    ),
+    createSubheading("Rekisterinpitäjä"),
+    createParagraph("Nimi: Biljardiklubi Siimaseura ry"),
+    createParagraph("Osoite: Hämeenpuisto 40 A 3, 33200 Tampere"),
+    createSubheading("Yhteyshenkilö rekisteriä koskevissa asioissa"),
+    createParagraph("Nimi: Sami Saariaho, sami@siimaseura.fi, 050-3263013"),
+    createParagraph("Osoite: Hämeenpuisto 40 A 3, 33200 Tampere"),
+    createSubheading("Rekisterin nimi"),
+    createParagraph("Biljardiklubi Siimaseura ry:n jäsenrekisteri"),
+    createSubheading("Rekisterin kuvaus"),
+    createParagraph(
+      "Rekisterin tietoja käytetään tiedottamisessa, kun halutaan tavoittaa koko jäsenistö kerralla tai kun on tarve ottaa yhteyttä ainoastaan yksittäiseen jäseneen. Rekisterin avulla myös seurataan jäsen maksujen maksua, jotta voidaan varmistua kuka voi edustaa yhdistystä esimerkiksi kilpailuissa."
+    ),
+    createSubheading("Henkilötietojen käsittely"),
+    createParagraph(
+      "Kerättävät tiedot: Sukunimi, etunimet, asuinkunta, puhelinnumero, sähköpostiosoite."
+    ),
+    createParagraph(
+      "Tietojen käyttö: Tietoja käytetään tiedottamiseen ja jäsenmaksun voimassaolon seurantaan."
+    ),
+    createParagraph(
+      "Tietojen luovuttamien kolmansille osapuolille: Tietoja ei luovuteta kolmansille osapuolille."
+    ),
+    createSubheading("Henkilötietojen tarkistamien ja muokkaaminen"),
+    createParagraph(
+      "Yhdistyksen jäsen voi pyytää yhteyshenkilöä toimittamaan itseään koskevat rekisterin sisältämät tiedot tarkastaakseen niiden oikeellisuuden ja tarvittaessa korjaamaan tietoja."
+    ),
+    createSubheading("Omien tietojen poistaminen"),
+    createParagraph(
+      "Yhdistyksen jäsen voi pyytää yhteyshenkilöä toimittamaan itseään koskevat rekisterin sisältämät tiedot tarkastaakseen niiden oikeellisuuden ja tarvittaessa korjaamaan tietoja."
+    )
   );
 }
