@@ -1,6 +1,12 @@
 body,
 img {
-  max-width: 800px;
+  max-width: 1000px;
+}
+
+body {
+  font-family: sans-serif;
+  margin: auto;
+  padding: 20px;
 }
 
 img {
@@ -8,15 +14,26 @@ img {
 }
 
 .navigation {
-  background-color: lightgray;
-  border-radius: 10px;
+  background-color: gainsboro;
+  border-radius: 50px;
   cursor: pointer;
   display: inline-block;
+  font-size: 24px;
   margin-right: 5px;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  transition: background-color 0.2s;
 }
 
 .navigation:hover {
-  background-color: gainsboro;
+  background-color: lightyellow;
+}
+
+p,
+h2 {
+  font-size: 24px;
+}
+
+h1 {
+  font-size: 40px;
 }
