@@ -1,0 +1,22 @@
+body,
+img {
+  max-width: 800px;
+}
+
+img {
+  border-radius: 5px;
+}
+
+.navigation {
+  background-color: lightgray;
+  border-radius: 10px;
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.navigation:hover {
+  background-color: gainsboro;
+}
