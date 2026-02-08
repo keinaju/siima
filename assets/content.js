@@ -1,5 +1,6 @@
 // Initialize click events:
 document.getElementById("home").onclick = setHome;
+document.getElementById("membership").onclick = setMembership;
 document.getElementById("contacts").onclick = setContacts;
 document.getElementById("policy").onclick = setPolicy;
 
@@ -36,6 +37,52 @@ function setHome() {
     ),
     createParagraph(
       "Aktiivista biljarditoimintaa on harjoitettu vuodesta 2005 ja rekisteröitynä yhdistyksenä vuodesta 2007 saakka. Alkuperäinen nimi Pyhäjärven Siimaseura ry. vaihdettiin nykyiseen muotoonsa muuton myötä vuonna 2017. Yhdistyksemme on myös Suomen Biljardiliitto ry:n jäsen."
+    )
+  );
+}
+
+function setMembership() {
+  getContentNode().replaceChildren(
+    createParagraph(
+      "Kiinnostaako pool-biljardi tai snooker? Oletko harrastuspaikkaa tai pelikavereita vailla?"
+    ),
+    createParagraph(
+      "Biljardiklubi Siimaseura tarjoaa hienot puitteet harrastamiseen omasta tasosta riippumatta. Pelitilamme on täysin päihteetön ja se sopii kaikenikäisille. Kilpailuhenkisille löytyy myös mahdollisuus osallistua Pirkanmaan Pool-liigaan, seuran sisäisiin liigoihin sekä kaikille avoimiin poolin kuukausikisoihin."
+    ),
+    createParagraph(
+      "Ole rohkeasti yhteydessä puheenjohtajaan tai sali-isäntään, kysy lisää ja tule paikan päälle tutustumaan toimintaamme!"
+    ),
+    createSubheading("Yleistä Biljardiklubi Siimaseura ry:n jäsenyydestä"),
+    createParagraph(
+      "Biljardiklubi Siimaseura on Tampereen Lamminpäässä toimiva ry-muotoinen, yksityinen ja voittoa tavoittelematon biljardiseura. Pyrimme tarjoamaan jäsenillemme hyvät puitteet poolin ja snookerin harrastamiseen omalla päihteettömällä pelisalillamme."
+    ),
+    createParagraph(
+      "Siimaseuralle on helppo saapua - niin henkilöautolla kuin linja-autollakin. Salin edustalla on ilmaista pysäköintitilaa. Nyssen bussit ajavat lähettyviltä."
+    ),
+    createSubheading("Biljardipöydät ja niiden käyttö"),
+    createParagraph(
+      "Salilla on neljä virallista pool-pöytää ja yksi ammattilaistason snookerpöytä. Pöytien harjaus, lanaus ja silitys tarvittaessa ovat jäsenten vastuulla. Uusia jäseniä ohjeistetaan pöytien huoltamisessa. Oman pelivuoron päätteeksi tulee putsata pöydät ja käyttää pallot pallopesurissa."
+    ),
+    createSubheading("Jäsen- ja pelimaksut"),
+    createParagraph(
+      "Hallitus käsittelee jäsenhakemuksen. Sen jälkeen uusi jäsen maksaa jäsenmaksun. Liityttyään ja jäsenmaksun maksettuaan voi lunastaa pelitilaan avainkoodin."
+    ),
+    createParagraph(
+      "Avainmaksu antaa rajattoman pelioikeuden Siimaseuralla klo 07-22 välillä, pois lukien liigaottelut ja tapahtumat. Kuukausimaksun hinta on 60 €/kk. Kuukausimaksu on aina kalenterikuukausikohtainen."
+    ),
+    createParagraph(
+      "Jäsen voi käydä myös kertamaksulla pelaamassa ja tällöin hinta on 10 €/kerta. Hyväksymme maksuvälineinä myös Smartum-setelit sekä Smartum-verkkomaksun (ei koske jäsenmaksua)."
+    ),
+    createParagraph(
+      "Jäsenmaksu 60 €/kausi maksetaan vuosittain pelikauden alettua. Pelikausi ajoittuu aikavälille 01.07.-30.06."
+    ),
+    createSubheading("Vierailijat ja vierasmaksu"),
+    createParagraph(
+      "Siimaseuran jäsen, jolla on avainmaksu maksettuna, voi tuoda mukanaan yhden vierailijan per käynti. Vierasmaksu on 15 € eikä peliaikaa ole rajoitettu. Tosin viimeisen jäsenen lähtiessä myös vierailijan on poistuttava pelitilasta."
+    ),
+    createSubheading("Salin tapahtumat"),
+    createParagraph(
+      "Salilla voidaan järjestää kilpailuita, jotka ovat avoimia myös ulkopuolisille pelaajille. Tällaisia tapahtumia ovat esim. Pirkanmaan Pool-liigan ottelut, Pirkanmaan snookerliigan ottelut, avoimet poolin kuukausikisat, alle 18-vuotiaiden Pirkanmaan mestaruuskisat ja muut vastaavat tapahtumat."
     )
   );
 }
