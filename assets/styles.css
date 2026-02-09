@@ -1,36 +1,52 @@
+body {
+  font-family: sans-serif;
+  margin: auto;
+}
+
+img {
+  border-radius: 10px;
+  width: 100%;
+}
+
+#navigation-bar {
+  background-color: black;
+  width: 100%;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+#navigation-title {
+  color: white;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.navigation-button {
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+}
+
+.navigation-button:hover {
+  background-color: white;
+  color: black;
+}
+
+#content {
+  max-width: 1200px;
+  margin: auto;
+}
+
 html {
   font-size: 16px;
 }
 
-body,
-img {
-  max-width: 900px;
-}
-
-body {
-  font-family: sans-serif;
-  margin: auto;
-  padding: 20px;
-}
-
-img {
-  border-radius: 5px;
-}
-
-.navigation {
-  background-color: gainsboro;
-  border-radius: 50px;
-  cursor: pointer;
-  display: inline-block;
-  margin-top: 5px;
-  margin-right: 5px;
-  padding-left: 10px;
-  padding-right: 10px;
-  transition: background-color 0.2s;
-}
-
-.navigation:hover {
-  background-color: lightgrey;
+#navigation-title {
+  font-size: 2rem;
 }
 
 p,
@@ -38,7 +54,7 @@ h2 {
   font-size: 2rem;
 }
 
-.navigation {
+.navigation-button {
   font-size: 2rem;
 }
 
