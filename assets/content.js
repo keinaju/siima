@@ -38,8 +38,9 @@ function createImage(filename) {
 
 function setHome() {
   getContentNode().replaceChildren(
+    createSubheading("Yleistä Siimaseurasta"),
     createParagraph(
-      "Biljardiklubi Siimaseura ry. on Tampereen Lamminpäästä käsin biljardiharrastusta edistävä yhdistys. Jäseniä ja pelaajia on nelisenkymmentä.",
+      "Biljardiklubi Siimaseura ry on Tampereen Lamminpäästä käsin biljardiharrastusta edistävä yhdistys. Jäseniä ja pelaajia on nelisenkymmentä.",
     ),
     createParagraph(
       "Siimaseuran oma kotisali, jossa on neljä kilpatason pool-pöytää (2 Diamondia ja 2 Dynamic III) ja yksi Shender-snookerpöytä.",
@@ -55,6 +56,7 @@ function setHome() {
 
 function setPremises() {
   getContentNode().replaceChildren(
+    createSubheading("Siimaseuran pelitilat"),
     createParagraph(
       "Biljardipaikkana Siimaseura on läpikäynyt monia eri vaiheita - aina laajennuksesta muuttoon asti. Hieman vajaat kaksitoista vuotta kotisali sijaitsi Tampereen Pyynikillä, kunnes edessä oli muutto nykyisiin tiloihin. Uusi kotisali Tampereen Lamminpäässä otettiin käyttöön 01.03.2017.",
     ),
@@ -65,7 +67,7 @@ function setPremises() {
       "Salin laadukkuuteen ja viihtyisyyteen on panostettu muutenkin. Tietokone, kaksi televisiota sekä soittopelit löytyvät, kuten myös keittiötilat ja WC. Ilmaista pysäköintitilaa on tarjolla niin pelipaikan edessä kuin Jussinkadun varressakin.",
     ),
     createParagraph(
-      "Pyhäjärven Siimaseura ry. muutti Pyynikin Trikoolla alkaneen saneerauksen vuoksi Lamminpäähän 01.03.2017, jonne pelitila pystytettiin talkoovoimin. Elokuussa pelipaikan ja yhdistyksen nimeksi tuli Biljardiklubi Siimaseura.",
+      "Pyhäjärven Siimaseura ry muutti Pyynikin Trikoolla alkaneen saneerauksen vuoksi Lamminpäähän 01.03.2017, jonne pelitila pystytettiin talkoovoimin. Elokuussa pelipaikan ja yhdistyksen nimeksi tuli Biljardiklubi Siimaseura.",
     ),
     createImage("premises.jpeg"),
   );
@@ -73,6 +75,7 @@ function setPremises() {
 
 function setRules() {
   getContentNode().replaceChildren(
+    createSubheading("Yhdistyksen säännöt"),
     createSubheading("1. § Yhdistyksen nimi ja kotipaikka"),
     createParagraph(
       "Yhdistyksen nimi on Biljardiklubi Siimaseura ry ja sen kotipaikka on Tampere.",
@@ -190,6 +193,7 @@ function setRules() {
 
 function setMembership() {
   getContentNode().replaceChildren(
+    createSubheading("Jäsenyys Biljardiklubi Siimaseura ry:ssä"),
     createParagraph(
       "Kiinnostaako pool-biljardi tai snooker? Oletko harrastuspaikkaa tai pelikavereita vailla?",
     ),
@@ -197,14 +201,13 @@ function setMembership() {
       "Biljardiklubi Siimaseura tarjoaa hienot puitteet harrastamiseen omasta tasosta riippumatta. Pelitilamme on täysin päihteetön ja se sopii kaikenikäisille. Kilpailuhenkisille löytyy myös mahdollisuus osallistua Pirkanmaan Pool-liigaan, seuran sisäisiin liigoihin sekä kaikille avoimiin poolin kuukausikisoihin.",
     ),
     createParagraph(
-      "Ole rohkeasti yhteydessä puheenjohtajaan tai sali-isäntään, kysy lisää ja tule paikan päälle tutustumaan toimintaamme!",
-    ),
-    createSubheading("Yleistä Biljardiklubi Siimaseura ry:n jäsenyydestä"),
-    createParagraph(
       "Biljardiklubi Siimaseura on Tampereen Lamminpäässä toimiva ry-muotoinen, yksityinen ja voittoa tavoittelematon biljardiseura. Pyrimme tarjoamaan jäsenillemme hyvät puitteet poolin ja snookerin harrastamiseen omalla päihteettömällä pelisalillamme.",
     ),
     createParagraph(
       "Siimaseuralle on helppo saapua - niin henkilöautolla kuin linja-autollakin. Salin edustalla on ilmaista pysäköintitilaa. Nyssen bussit ajavat lähettyviltä.",
+    ),
+    createParagraph(
+      "Ole rohkeasti yhteydessä puheenjohtajaan tai sali-isäntään, kysy lisää ja tule paikan päälle tutustumaan toimintaamme!",
     ),
     createSubheading("Biljardipöydät ja niiden käyttö"),
     createParagraph(
@@ -236,6 +239,17 @@ function setMembership() {
 
 function setContacts() {
   getContentNode().replaceChildren(
+    createSubheading("Käyntiosoite"),
+    createParagraph("Biljardiklubi Siimaseura ry."),
+    createParagraph("Jussinkatu 1 I (1. krs, sisäänkäynti sisäpihalta)"),
+    createParagraph("33420 TAMPERE"),
+    createSubheading("Postiosoite"),
+    createParagraph("Biljardiklubi Siimaseura ry."),
+    createParagraph("Lamminpäänkatu 26"),
+    createParagraph("33420 TAMPERE"),
+    createSubheading("Sähköposti"),
+    createParagraph("siimaseura@siimaseura.fi"),
+    createSubheading("Biljardiklubi Siimaseura ry:n hallitus"),
     createParagraph(
       "Timo Sacklén, puheenjohtaja, 044 342 7007, timos@siimaseura.fi",
     ),
@@ -251,6 +265,26 @@ function setContacts() {
     ),
     createParagraph(
       "Kai Talvio, hallituksen jäsen, 045 885 4449, kai@siimaseura.fi",
+    ),
+    createSubheading("Yhdistyksen muut vastuuhenkilöt"),
+    createParagraph(
+      "Janne Forsman, päävalmentaja, 041 442 2779, janne@siimaseura.fi",
+    ),
+    createParagraph(
+      "Kimmo Loppela, klubi-isäntä, 0400 839 474, kimmo@siimaseura.fi",
+    ),
+    createSubheading("Liigajoukkueiden yhteyshenkilöt"),
+    createParagraph(
+      "BKS Sankarit: Timo Sacklén, 044 342 7007, timos@siimaseura.fi",
+    ),
+    createParagraph(
+      "BKS Sisukkaat: Kai Talvio, 045 885 4449, kai@siimaseura.fi",
+    ),
+    createParagraph(
+      "BKS Starat: Kimmo Loppela, 0400 839 474, kimmo@siimaseura.fi",
+    ),
+    createParagraph(
+      "BKS Superit: Tommi Aalto, 050 431 1341, tommi@siimaseura.fi",
     ),
   );
 }
