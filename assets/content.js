@@ -273,19 +273,6 @@ function setContacts() {
     createParagraph(
       "Kimmo Loppela, klubi-isäntä, 0400 839 474, kimmo@siimaseura.fi",
     ),
-    createSubheading("Liigajoukkueiden yhteyshenkilöt"),
-    createParagraph(
-      "BKS Sankarit: Timo Sacklén, 044 342 7007, timos@siimaseura.fi",
-    ),
-    createParagraph(
-      "BKS Sisukkaat: Kai Talvio, 045 885 4449, kai@siimaseura.fi",
-    ),
-    createParagraph(
-      "BKS Starat: Kimmo Loppela, 0400 839 474, kimmo@siimaseura.fi",
-    ),
-    createParagraph(
-      "BKS Superit: Tommi Aalto, 050 431 1341, tommi@siimaseura.fi",
-    ),
   );
 }
 
