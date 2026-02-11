@@ -5,13 +5,9 @@ document.getElementById("rules").onclick = setRules;
 document.getElementById("membership").onclick = setMembership;
 document.getElementById("contacts").onclick = setContacts;
 document.getElementById("policy").onclick = setPolicy;
-document.getElementById("menu-icon-container").onclick = toggleMenu;
 
 // Display initial content:
 setHome();
-
-// Hide menu initially:
-toggleMenu();
 
 // Returns the node where content is displayed.
 function getContentNode() {

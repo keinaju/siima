@@ -2,10 +2,6 @@ html {
   font-size: 16px;
 }
 
-#navigation-title {
-  font-size: 2rem;
-}
-
 p,
 h2 {
   font-size: 1.2rem;
@@ -19,10 +15,6 @@ h1 {
   font-size: 1.5rem;
 }
 
-#menu-icon-container {
-  font-size: 2rem;
-}
-
 body {
   font-family: sans-serif;
   margin: auto;
@@ -34,17 +26,18 @@ img {
   width: 100%;
 }
 
+#logo {
+  margin: auto;
+  width: 250px;
+  border-radius: 0px;
+}
+
 #navigation-bar {
   padding-left: 10px;
   padding-right: 10px;
   margin: auto;
   overflow: hidden;
   position: relative;
-}
-
-#navigation-title {
-  font-weight: bold;
-  display: inline-block;
 }
 
 .navigation-button {
@@ -61,34 +54,6 @@ img {
   padding-right: 10px;
 }
 
-.menu-icon-line {
-  width: 35px;
-  height: 5px;
-  background-color: white;
-  margin: 6px 0;
-}
-
 .hidden {
   display: none;
-}
-
-#menu-icon-container {
-  cursor: pointer;
-  height: 40px;
-  padding-left: 1.25em;
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-#menu-icon-container:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0.25em;
-  width: 1em;
-  height: 0.15em;
-  background: black;
-  box-shadow:
-    0 0.25em 0 0 black,
-    0 0.5em 0 0 black;
 }
