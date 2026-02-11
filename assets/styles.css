@@ -41,12 +41,12 @@ img {
 }
 
 .navigation-button {
-  color: blue;
+  color: rgb(100, 100, 100);
   cursor: pointer;
 }
 
 .navigation-button:hover {
-  color: magenta;
+  color: black;
 }
 
 #content {

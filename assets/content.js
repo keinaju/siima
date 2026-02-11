@@ -34,6 +34,14 @@ function createImage(filename) {
   return image;
 }
 
+function createLink(text, onClick) {
+  const link = document.createElement("span");
+  link.onclick = onClick;
+  link.appendChild(document.createTextNode(text));
+  link.classList.add("navigation-button");
+  return link;
+}
+
 function setHome() {
   const rulesLink = document.createElement("div");
   rulesLink.classList.add("navigation-button");
@@ -274,6 +282,12 @@ function setContacts() {
     createParagraph("Biljardiklubi Siimaseura ry."),
     createParagraph("Jussinkatu 1 I (1. krs, sisäänkäynti sisäpihalta)"),
     createParagraph("33420 TAMPERE"),
+    createLink("▸ Karttalinkki", () =>
+      window.open(
+        "https://www.google.com/maps/place/Jussinkatu+1,+33420+Tampere",
+        "_blank",
+      ),
+    ),
     createImage("jussinkatu-1-I.jpg"),
     createSubheading("Postiosoite"),
     createParagraph("Biljardiklubi Siimaseura ry."),
