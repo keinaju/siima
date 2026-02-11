@@ -1,10 +1,8 @@
 // Initialize click events:
 document.getElementById("home").onclick = setHome;
 document.getElementById("premises").onclick = setPremises;
-document.getElementById("rules").onclick = setRules;
 document.getElementById("membership").onclick = setMembership;
 document.getElementById("contacts").onclick = setContacts;
-document.getElementById("policy").onclick = setPolicy;
 
 // Display initial content:
 setHome();
@@ -12,6 +10,10 @@ setHome();
 // Returns the node where content is displayed.
 function getContentNode() {
   return document.getElementById("content");
+}
+
+function scrollToTop() {
+  window.scrollTo(0, 0);
 }
 
 function createParagraph(text) {
@@ -33,6 +35,18 @@ function createImage(filename) {
 }
 
 function setHome() {
+  const rulesLink = document.createElement("div");
+  rulesLink.classList.add("navigation-button");
+  rulesLink.appendChild(document.createTextNode("▸ Yhdistyksen säännöt"));
+  rulesLink.onclick = setRules;
+
+  const policyLink = document.createElement("div");
+  policyLink.classList.add("navigation-button");
+  policyLink.appendChild(
+    document.createTextNode("▸ Rekisteri- ja tietosuojaseloste"),
+  );
+  policyLink.onclick = setPolicy;
+
   getContentNode().replaceChildren(
     createSubheading("Yleistä Siimaseurasta"),
     createParagraph(
@@ -49,7 +63,12 @@ function setHome() {
       "Aktiivista biljarditoimintaa on harjoitettu vuodesta 2005 ja rekisteröitynä yhdistyksenä vuodesta 2007 saakka. Alkuperäinen nimi Pyhäjärven Siimaseura ry. vaihdettiin nykyiseen muotoonsa muuton myötä vuonna 2017. Yhdistyksemme on myös Suomen Biljardiliitto ry:n jäsen.",
     ),
     createImage("69140462_500727890495934_4406410775229366272_n.jpg"),
+    createSubheading("Lisätietoja yhdistyksestä"),
+    rulesLink,
+    policyLink,
   );
+
+  scrollToTop();
 }
 
 function setPremises() {
@@ -72,6 +91,8 @@ function setPremises() {
       "Pyhäjärven Siimaseura ry muutti Pyynikin Trikoolla alkaneen saneerauksen vuoksi Lamminpäähän 01.03.2017, jonne pelitila pystytettiin talkoovoimin. Elokuussa pelipaikan ja yhdistyksen nimeksi tuli Biljardiklubi Siimaseura.",
     ),
   );
+
+  scrollToTop();
 }
 
 function setRules() {
@@ -190,6 +211,8 @@ function setRules() {
       "Yhdistyksen purkautuessa käytetään yhdistyksen varat yhdistyksen tarkoituksen edistämiseen purkamisesta päättävän kokouksen määräämällä tavalla. Yhdistyksen tullessa lakkautetuksi käytetään sen varat samaan tarkoitukseen.",
     ),
   );
+
+  scrollToTop();
 }
 
 function setMembership() {
@@ -241,6 +264,8 @@ function setMembership() {
     createImage("82029956_603916980177024_3209031316817313792_n.jpg"),
     createImage("469358571_1719822481919796_4587649017413959354_n-cropped.jpg"),
   );
+
+  scrollToTop();
 }
 
 function setContacts() {
@@ -281,6 +306,8 @@ function setContacts() {
       "Kimmo Loppela, klubi-isäntä, 0400 839 474, kimmo@siimaseura.fi",
     ),
   );
+
+  scrollToTop();
 }
 
 function setPolicy() {
@@ -319,10 +346,6 @@ function setPolicy() {
       "Yhdistyksen jäsen voi pyytää yhteyshenkilöä toimittamaan itseään koskevat rekisterin sisältämät tiedot tarkastaakseen niiden oikeellisuuden ja tarvittaessa korjaamaan tietoja.",
     ),
   );
-}
 
-function toggleMenu() {
-  document
-    .getElementById("navigation-buttons-container")
-    .classList.toggle("hidden");
+  scrollToTop();
 }
