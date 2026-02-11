@@ -47,6 +47,7 @@ function setHome() {
     createParagraph(
       "Aktiivista biljarditoimintaa on harjoitettu vuodesta 2005 ja rekisteröitynä yhdistyksenä vuodesta 2007 saakka. Alkuperäinen nimi Pyhäjärven Siimaseura ry. vaihdettiin nykyiseen muotoonsa muuton myötä vuonna 2017. Yhdistyksemme on myös Suomen Biljardiliitto ry:n jäsen.",
     ),
+    createImage("480914841_1145314760624133_1940271809585768234_n-cropped.jpg"),
   );
 }
 
@@ -65,7 +66,9 @@ function setPremises() {
     createParagraph(
       "Pyhäjärven Siimaseura ry muutti Pyynikin Trikoolla alkaneen saneerauksen vuoksi Lamminpäähän 01.03.2017, jonne pelitila pystytettiin talkoovoimin. Elokuussa pelipaikan ja yhdistyksen nimeksi tuli Biljardiklubi Siimaseura.",
     ),
-    createImage("premises.jpeg"),
+    createImage("2026-02-11-14.19.21.jpeg"),
+    createImage("2026-02-11-14.19.48.jpeg"),
+    createImage("2026-02-11-14.20.29.jpeg"),
   );
 }
 
@@ -205,10 +208,12 @@ function setMembership() {
     createParagraph(
       "Ole rohkeasti yhteydessä puheenjohtajaan tai sali-isäntään, kysy lisää ja tule paikan päälle tutustumaan toimintaamme!",
     ),
+    createImage("482013744_1152469859908623_2159364794698527494_n.jpg"),
     createSubheading("Biljardipöydät ja niiden käyttö"),
     createParagraph(
       "Salilla on neljä virallista pool-pöytää ja yksi ammattilaistason snookerpöytä. Pöytien harjaus, lanaus ja silitys tarvittaessa ovat jäsenten vastuulla. Uusia jäseniä ohjeistetaan pöytien huoltamisessa. Oman pelivuoron päätteeksi tulee putsata pöydät ja käyttää pallot pallopesurissa.",
     ),
+    createImage("2026-02-11-08.06.10.jpeg"),
     createSubheading("Jäsen- ja pelimaksut"),
     createParagraph(
       "Hallitus käsittelee jäsenhakemuksen. Sen jälkeen uusi jäsen maksaa jäsenmaksun. Liityttyään ja jäsenmaksun maksettuaan voi lunastaa pelitilaan avainkoodin.",
@@ -230,6 +235,9 @@ function setMembership() {
     createParagraph(
       "Salilla voidaan järjestää kilpailuita, jotka ovat avoimia myös ulkopuolisille pelaajille. Tällaisia tapahtumia ovat esim. Pirkanmaan Pool-liigan ottelut, Pirkanmaan snookerliigan ottelut, avoimet poolin kuukausikisat, alle 18-vuotiaiden Pirkanmaan mestaruuskisat ja muut vastaavat tapahtumat.",
     ),
+    createImage("469462267_1719822478586463_1806400859678101185_n.jpg"),
+    createImage("82029956_603916980177024_3209031316817313792_n.jpg"),
+    createImage("469358571_1719822481919796_4587649017413959354_n-cropped.jpg"),
   );
 }
 
@@ -239,6 +247,7 @@ function setContacts() {
     createParagraph("Biljardiklubi Siimaseura ry."),
     createParagraph("Jussinkatu 1 I (1. krs, sisäänkäynti sisäpihalta)"),
     createParagraph("33420 TAMPERE"),
+    createImage("jussinkatu-1-I.jpg"),
     createSubheading("Postiosoite"),
     createParagraph("Biljardiklubi Siimaseura ry."),
     createParagraph("Lamminpäänkatu 26"),
