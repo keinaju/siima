@@ -41,19 +41,21 @@ function setHome() {
     createParagraph(
       "Siimaseuran oma kotisali, jossa on neljä kilpatason pool-pöytää (2 Diamondia ja 2 Dynamic III) ja yksi Shender-snookerpöytä.",
     ),
+    createImage("2026-02-11-14.19.48.jpeg"),
     createParagraph(
       "Biljardiklubi Siimaseura ry:n biljarditoiminta sopii kaikille - junioreista senioreihin ja aloittelijoista vuosikymmeniä pelanneisiin konkareihin. Seuralla on päävalmentaja ja kaikkiaan neljä Suomen Biljardiliitto ry:n kouluttamaa seuravalmentajaa. Tarjolla on valmennusta myös alle 18-vuotiaille.",
     ),
     createParagraph(
       "Aktiivista biljarditoimintaa on harjoitettu vuodesta 2005 ja rekisteröitynä yhdistyksenä vuodesta 2007 saakka. Alkuperäinen nimi Pyhäjärven Siimaseura ry. vaihdettiin nykyiseen muotoonsa muuton myötä vuonna 2017. Yhdistyksemme on myös Suomen Biljardiliitto ry:n jäsen.",
     ),
-    createImage("480914841_1145314760624133_1940271809585768234_n-cropped.jpg"),
+    createImage("69140462_500727890495934_4406410775229366272_n.jpg"),
   );
 }
 
 function setPremises() {
   getContentNode().replaceChildren(
     createSubheading("Siimaseuran pelitilat"),
+    createImage("2026-02-11-08.06.10.jpeg"),
     createParagraph(
       "Biljardipaikkana Siimaseura on läpikäynyt monia eri vaiheita - aina laajennuksesta muuttoon asti. Hieman vajaat kaksitoista vuotta kotisali sijaitsi Tampereen Pyynikillä, kunnes edessä oli muutto nykyisiin tiloihin. Uusi kotisali Tampereen Lamminpäässä otettiin käyttöön 01.03.2017.",
     ),
