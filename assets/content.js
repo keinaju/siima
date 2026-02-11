@@ -41,7 +41,7 @@ function setHome() {
     createParagraph(
       "Siimaseuran oma kotisali, jossa on neljä kilpatason pool-pöytää (2 Diamondia ja 2 Dynamic III) ja yksi Shender-snookerpöytä.",
     ),
-    createImage("2026-02-11-14.19.48.jpeg"),
+    createImage("2026-02-11-08.06.10.jpeg"),
     createParagraph(
       "Biljardiklubi Siimaseura ry:n biljarditoiminta sopii kaikille - junioreista senioreihin ja aloittelijoista vuosikymmeniä pelanneisiin konkareihin. Seuralla on päävalmentaja ja kaikkiaan neljä Suomen Biljardiliitto ry:n kouluttamaa seuravalmentajaa. Tarjolla on valmennusta myös alle 18-vuotiaille.",
     ),
@@ -55,22 +55,22 @@ function setHome() {
 function setPremises() {
   getContentNode().replaceChildren(
     createSubheading("Siimaseuran pelitilat"),
-    createImage("2026-02-11-08.06.10.jpeg"),
     createParagraph(
       "Biljardipaikkana Siimaseura on läpikäynyt monia eri vaiheita - aina laajennuksesta muuttoon asti. Hieman vajaat kaksitoista vuotta kotisali sijaitsi Tampereen Pyynikillä, kunnes edessä oli muutto nykyisiin tiloihin. Uusi kotisali Tampereen Lamminpäässä otettiin käyttöön 01.03.2017.",
     ),
     createParagraph(
-      "Lamminpään pelitilalla on kokoa 140,0 m². Pooliin eli tavalliseen biljardiin on neljä pöytää: 2 kpl Diamond ja 2kpl Dynamic III. Snooker-pöytänä on Shender. ",
+      "Lamminpään pelitilalla on kokoa 140,0 m². Pooliin eli tavalliseen biljardiin on neljä pöytää: 2 kpl Diamond ja 2kpl Dynamic III. Snooker-pöytänä on Shender.",
     ),
+    createImage("2026-02-11-14.19.48.jpeg"),
+    createImage("2026-02-11-14.19.21.jpeg"),
+    createImage("2026-02-11-14.20.29.jpeg"),
+    createImage("2026-02-11-08.06.10.jpeg"),
     createParagraph(
       "Salin laadukkuuteen ja viihtyisyyteen on panostettu muutenkin. Tietokone, kaksi televisiota sekä soittopelit löytyvät, kuten myös keittiötilat ja WC. Ilmaista pysäköintitilaa on tarjolla niin pelipaikan edessä kuin Jussinkadun varressakin.",
     ),
     createParagraph(
       "Pyhäjärven Siimaseura ry muutti Pyynikin Trikoolla alkaneen saneerauksen vuoksi Lamminpäähän 01.03.2017, jonne pelitila pystytettiin talkoovoimin. Elokuussa pelipaikan ja yhdistyksen nimeksi tuli Biljardiklubi Siimaseura.",
     ),
-    createImage("2026-02-11-14.19.21.jpeg"),
-    createImage("2026-02-11-14.19.48.jpeg"),
-    createImage("2026-02-11-14.20.29.jpeg"),
   );
 }
 
