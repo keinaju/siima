@@ -296,7 +296,7 @@ function setContacts() {
       "Timo Sacklén, puheenjohtaja, 044 342 7007, timos@siimaseura.fi",
     ),
     createParagraph(
-      "Vesa Saarinen, varapuheenjohtaja, 050 558 8484, vesa@siimaseura.fi",
+      "Kai Talvio, varapuheenjohtaja, 045 885 4449, kai@siimaseura.fi",
     ),
     createParagraph(
       "Janne Forsman, hallituksen jäsen, 041 442 2779, janne@siimaseura.fi",
@@ -304,9 +304,6 @@ function setContacts() {
     createParagraph("Joni Seppälä, sihteeri, 040 547 1415, joni@siimaseura.fi"),
     createParagraph(
       "Sami Saariaho, rahastonhoitaja, 050 326 3013, sami@siimaseura.fi",
-    ),
-    createParagraph(
-      "Kai Talvio, hallituksen jäsen, 045 885 4449, kai@siimaseura.fi",
     ),
     createSubheading("Yhdistyksen muut vastuuhenkilöt"),
     createParagraph(
