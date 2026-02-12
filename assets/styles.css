@@ -2,6 +2,7 @@
   --tournament-blue: rgb(48, 182, 255);
   --shark-grey: rgb(108, 119, 128);
   --snooker-green: rgb(34, 139, 34);
+  --primary: rgb(50, 50, 50);
 }
 
 html {
@@ -11,7 +12,7 @@ html {
 p,
 h2 {
   font-size: 1.2rem;
-  color: rgb(50, 50, 50);
+  color: var(--primary);
 }
 
 .navigation-button {
@@ -40,8 +41,12 @@ img {
 }
 
 #navigation-bar {
-  border: 1px solid var(--shark-grey);
-  border-radius: 20px;
+  border-top: 0px;
+  border-left: 3px solid rgb(200, 200, 200);
+  border-right: 3px solid rgb(200, 200, 200);
+  border-bottom: 3px solid rgb(200, 200, 200);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   margin: auto;
   overflow: hidden;
