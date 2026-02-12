@@ -1,3 +1,9 @@
+:root {
+  --tournament-blue: rgb(48, 182, 255);
+  --shark-grey: rgb(108, 119, 128);
+  --snooker-green: rgb(34, 139, 34);
+}
+
 html {
   font-size: 16px;
 }
@@ -5,6 +11,7 @@ html {
 p,
 h2 {
   font-size: 1.2rem;
+  color: rgb(50, 50, 50);
 }
 
 .navigation-button {
@@ -41,12 +48,13 @@ img {
 }
 
 .navigation-button {
-  color: rgb(100, 100, 100);
+  color: var(--tournament-blue);
+  transition: color 0.3s;
   cursor: pointer;
 }
 
 .navigation-button:hover {
-  color: black;
+  color: var(--shark-grey);
 }
 
 #content {
