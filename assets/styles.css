@@ -40,7 +40,8 @@ img {
 }
 
 #navigation-bar {
-  border-radius: 10px;
+  border: 1px solid var(--shark-grey);
+  border-radius: 20px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   margin: auto;
   overflow: hidden;
