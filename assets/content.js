@@ -70,7 +70,6 @@ function setHome() {
     createParagraph(
       "Aktiivista biljarditoimintaa on harjoitettu vuodesta 2005 ja rekisteröitynä yhdistyksenä vuodesta 2007 saakka. Alkuperäinen nimi Pyhäjärven Siimaseura ry. vaihdettiin nykyiseen muotoonsa muuton myötä vuonna 2017. Yhdistyksemme on myös Suomen Biljardiliitto ry:n jäsen.",
     ),
-    createImage("69140462_500727890495934_4406410775229366272_n.jpg"),
     createSubheading("Lisätietoja yhdistyksestä"),
     rulesLink,
     policyLink,
@@ -268,9 +267,6 @@ function setMembership() {
     createParagraph(
       "Salilla voidaan järjestää kilpailuita, jotka ovat avoimia myös ulkopuolisille pelaajille. Tällaisia tapahtumia ovat esim. Pirkanmaan Pool-liigan ottelut, Pirkanmaan snookerliigan ottelut, avoimet poolin kuukausikisat, alle 18-vuotiaiden Pirkanmaan mestaruuskisat ja muut vastaavat tapahtumat.",
     ),
-    createImage("469462267_1719822478586463_1806400859678101185_n.jpg"),
-    createImage("82029956_603916980177024_3209031316817313792_n.jpg"),
-    createImage("469358571_1719822481919796_4587649017413959354_n-cropped.jpg"),
   );
 
   scrollToTop();
