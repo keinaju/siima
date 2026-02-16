@@ -1,16 +1,19 @@
 // Initialize click events:
-document.getElementById("home").onclick = () => showSection("home-section");
-document.getElementById("premises").onclick = () =>
+document.getElementById("home-button").onclick = () =>
+  showSection("home-section");
+document.getElementById("premises-button").onclick = () =>
   showSection("premises-section");
-document.getElementById("membership").onclick = () =>
+document.getElementById("membership-button").onclick = () =>
   showSection("membership-section");
-document.getElementById("contacts").onclick = () =>
+document.getElementById("contacts-button").onclick = () =>
   showSection("contacts-section");
-document.getElementById("rules").onclick = () => showSection("rules-section");
-document.getElementById("policy").onclick = () => showSection("policy-section");
+document.getElementById("rules-button").onclick = () =>
+  showSection("rules-section");
+document.getElementById("policy-button").onclick = () =>
+  showSection("policy-section");
 
-// Display initial content:
-setHome();
+// Display home page initially:
+showSection("home-section");
 
 function getAllSections() {
   return [
