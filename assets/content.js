@@ -1,17 +1,16 @@
 // Initialize click events:
-document.getElementById("home").onclick = setHome;
-document.getElementById("premises").onclick = setPremises;
-document.getElementById("membership").onclick = setMembership;
-document.getElementById("contacts").onclick = setContacts;
-document.getElementById("rules").onclick = setRules;
-document.getElementById("policy").onclick = setPolicy;
+document.getElementById("home").onclick = () => showSection("home-section");
+document.getElementById("premises").onclick = () =>
+  showSection("premises-section");
+document.getElementById("membership").onclick = () =>
+  showSection("membership-section");
+document.getElementById("contacts").onclick = () =>
+  showSection("contacts-section");
+document.getElementById("rules").onclick = () => showSection("rules-section");
+document.getElementById("policy").onclick = () => showSection("policy-section");
 
 // Display initial content:
 setHome();
-
-function scrollToTop() {
-  window.scrollTo(0, 0);
-}
 
 function getAllSections() {
   return [
@@ -30,32 +29,7 @@ function hideAllSections() {
   }
 }
 
-function setHome() {
+function showSection(sectionId) {
   hideAllSections();
-  document.getElementById("home-section").classList.remove("hidden");
-}
-
-function setPremises() {
-  hideAllSections();
-  document.getElementById("premises-section").classList.remove("hidden");
-}
-
-function setRules() {
-  hideAllSections();
-  document.getElementById("rules-section").classList.remove("hidden");
-}
-
-function setMembership() {
-  hideAllSections();
-  document.getElementById("membership-section").classList.remove("hidden");
-}
-
-function setContacts() {
-  hideAllSections();
-  document.getElementById("contacts-section").classList.remove("hidden");
-}
-
-function setPolicy() {
-  hideAllSections();
-  document.getElementById("policy-section").classList.remove("hidden");
+  document.getElementById(sectionId).classList.remove("hidden");
 }
