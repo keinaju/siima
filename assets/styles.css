@@ -36,6 +36,13 @@ img {
 
 #logo-text {
   width: 300px;
+  background-color: rgba(152, 163, 172, 0.4);
+  border-radius: 100px;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 #navigation-bar {
@@ -43,7 +50,7 @@ img {
   background-image: url("images/siimaseura-logo.gif");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 80px;
+  background-size: 70px;
   border-top: 0px;
   border-left: 2px solid rgb(200, 200, 200);
   border-right: 2px solid rgb(200, 200, 200);
@@ -56,6 +63,7 @@ img {
   justify-content: center;
   margin-left: 10px;
   margin-right: 10px;
+  margin-bottom: 20px;
   overflow: hidden;
   padding: 10px;
   position: relative;
@@ -66,9 +74,10 @@ img {
   border-radius: 100px;
   color: var(--tournament-blue);
   cursor: pointer;
-  transition: color 0.3s;
+  margin-bottom: 5px;
   padding-left: 10px;
   padding-right: 10px;
+  transition: color 0.3s;
   width: fit-content;
 }
 
