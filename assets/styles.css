@@ -34,12 +34,12 @@ img {
   max-width: 100%;
 }
 
-#logo {
-  margin-bottom: 20px;
-  width: 250px;
+#logo-text {
+  width: 300px;
 }
 
 #navigation-bar {
+  align-items: center;
   background-image: url("images/siimaseura-logo.gif");
   background-repeat: no-repeat;
   background-position: center;
@@ -51,6 +51,9 @@ img {
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  display: flex;
+  height: 80px;
+  justify-content: center;
   margin-left: 10px;
   margin-right: 10px;
   overflow: hidden;
