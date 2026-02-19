@@ -24,6 +24,7 @@ h1 {
 }
 
 body {
+  background-color: whitesmoke;
   font-family: sans-serif;
   margin: auto;
   max-width: 800px;
