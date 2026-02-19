@@ -71,7 +71,7 @@ img {
 }
 
 .navigation-button {
-  background-color: rgb(233, 245, 255);
+  background-color: rgb(220, 239, 255);
   border-radius: 100px;
   color: var(--tournament-blue);
   cursor: pointer;
