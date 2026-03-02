@@ -1,38 +1,40 @@
-// Initialize click events:
-document.getElementById("home-button").onclick = () =>
-  showSection("home-section");
-document.getElementById("premises-button").onclick = () =>
-  showSection("premises-section");
-document.getElementById("membership-button").onclick = () =>
-  showSection("membership-section");
-document.getElementById("contacts-button").onclick = () =>
-  showSection("contacts-section");
-document.getElementById("rules-button").onclick = () =>
-  showSection("rules-section");
-document.getElementById("policy-button").onclick = () =>
-  showSection("policy-section");
+const navMap = {
+  "home-button": "home-section",
+  "premises-button": "premises-section",
+  "membership-button": "membership-section",
+  "contacts-button": "contacts-section",
+  "rules-button": "rules-section",
+  "policy-button": "policy-section",
+};
 
-// Display home page initially:
-showSection("home-section");
-
-function getAllSections() {
-  return [
-    document.getElementById("home-section"),
-    document.getElementById("rules-section"),
-    document.getElementById("policy-section"),
-    document.getElementById("premises-section"),
-    document.getElementById("membership-section"),
-    document.getElementById("contacts-section"),
-  ];
+// Initialize nav button click events
+for (const [buttonId, sectionId] of Object.entries(navMap)) {
+  document.getElementById(buttonId).onclick = () =>
+    showSection(sectionId, buttonId);
 }
 
+// Display home page initially
+showSection("home-section", "home-button");
+
 function hideAllSections() {
-  for (const section of getAllSections()) {
+  for (const sectionId of Object.values(navMap)) {
+    const section = document.getElementById(sectionId);
     section.classList.add("hidden");
   }
 }
 
-function showSection(sectionId) {
+function clearActiveNav() {
+  document.querySelectorAll(".navigation-button").forEach((button) => {
+    button.classList.remove("active");
+  });
+}
+
+function showSection(sectionId, activeButtonId) {
   hideAllSections();
+  clearActiveNav();
   document.getElementById(sectionId).classList.remove("hidden");
+  if (activeButtonId) {
+    document.getElementById(activeButtonId).classList.add("active");
+  }
+  window.scrollTo({ top: 0, behavior: "smooth" });
 }
